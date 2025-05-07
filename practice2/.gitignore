@@ -1,0 +1,10 @@
+# 忽略 node_modules 資料夾
+node_modules/
+
+# 忽略打包輸出（如果只想 push 原始碼）
+dist/
+
+# 忽略系統或編輯器的設定檔
+.DS_Store
+*.log
+.vscode/
