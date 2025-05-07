@@ -1,46 +1,18 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
-  <head>
-    <meta charset="UTF-8" />
-    <title>TO DO LIST</title>
-  </head>
-  <body>
-    <h1>📋 MY Mission List（●´∀｀）ノ♡</h1>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Task Manager</title>
+</head>
+<body>
+  <h1>任務清單</h1>
 
-    <section id="project-section">
-      <h2 id="project-name">預設專案</h2>
-      <ul id="task-list"></ul>
-    </section>
+  <form id="task-form">
+    <input type="text" id="task-title" placeholder="輸入任務" required />
+    <input type="text" id="task-priority" placeholder="分類/優先級" required />
+    <button type="submit">新增任務</button>
+  </form>
 
-    <button id="open-form">➕ ADD new mission</button>
-
-    <dialog id="task-dialog">
-      <form method="dialog" id="task-form">
-        <label>
-          Title：
-          <input type="text" id="title" required />
-        </label>
-        <label>
-          Discription：
-          <input type="text" id="description" />
-        </label>
-        <label>
-          Due Date：
-          <input type="date" id="dueDate" required />
-        </label>
-        <label>
-          Priority：
-          <select id="priority">
-            <option value="高">高</option>
-            <option value="中">中</option>
-            <option value="低">低</option>
-          </select>
-        </label>
-        <button type="submit">新增</button>
-        <button type="button" id="cancel-btn">取消</button>
-      </form>
-    </dialog>
-
-    <script src="main.js"></script>
-  </body>
+  <ul id="task-list"></ul>
+</body>
 </html>

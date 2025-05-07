@@ -1,0 +1,130 @@
+/* 全域樣式 */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+  }
+  
+  /* 頁首 */
+  header {
+    background-color: #134080;
+    color: white;
+    padding: 1rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  /* 主體區塊 */
+  main {
+    display: flex;
+    height: calc(100vh - 64px); /* 除去 header 高度 */
+  }
+  
+  /* 側邊欄 */
+  .sidebar {
+    width: 200px;
+    background-color: #f2f2f2;
+    padding: 1rem;
+    box-sizing: border-box;
+    border-right: 1px solid #ccc;
+  }
+  
+  .project-title {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .new-project-btn {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+  }
+  
+  /* 任務內容區塊 */
+  .content {
+    flex: 1;
+    padding: 1rem;
+    background-color: #fff;
+    box-sizing: border-box;
+    overflow-y: auto;
+  }
+  
+  /* 任務卡片 */
+  .task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .task-info {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .task-title {
+    font-weight: normal;
+  }
+  
+  /* 優先等級小圓點 */
+  .priority-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  
+  .priority-1 { background-color: red; }
+  .priority-2 { background-color: orange; }
+  .priority-3 { background-color: gold; }
+  .priority-4 { background-color: green; }
+  .priority-5 { background-color: rgb(5, 212, 5); }
+  
+  /* 按鈕樣式 */
+  button {
+    border: 1px solid #ccc;
+    background-color: white;
+    cursor: pointer;
+    padding: 0.3rem 0.6rem;
+    font-size: 0.9rem;
+  }
+  
+  button:hover {
+    background-color: #eee;
+  }
+  
+  .delete-btn {
+    border: none;
+    font-size: 1rem;
+  }
+  
+  .task.completed {
+    text-decoration: line-through;
+    color: gray;
+    opacity: 0.6;
+  }
+  
+  .task-desc {
+    font-size: 0.9em;
+    margin-left: 24px;
+    color: #555;
+  }
+  
+  /*好一點的任務新增*/
+  dialog {
+    border: none;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  }
+  dialog::backdrop {
+    background: rgba(0, 0, 0, 0.3);
+  }
+  form label {
+    display: block;
+    margin: 0.5rem 0;
+  }
