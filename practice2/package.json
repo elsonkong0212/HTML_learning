@@ -2,7 +2,7 @@
   "name": "practice2",
   "version": "1.0.0",
   "main": "index.js",
-  "homepage": "https://elsonkong0212.github.io/HTML_learning/practice2",
+  "homepage": "https://elsonkong0212.github.io/HTML_learning/practice2/",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve --open",
