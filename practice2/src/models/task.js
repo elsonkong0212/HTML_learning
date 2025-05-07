@@ -3,7 +3,7 @@ export default class Task {
       this.title = title;
       this.description = description;
       this.dueDate = dueDate;
-      this.priority = priority;//mission classification
+      this.priority = priority;
       this.completed = false;
     }
   
@@ -11,4 +11,3 @@ export default class Task {
       this.completed = !this.completed;
     }
   }
-  
