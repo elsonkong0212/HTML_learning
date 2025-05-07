@@ -2,17 +2,59 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Task Manager</title>
-</head>
+  <title>Todo List</title>
+  <link rel="stylesheet" href="style.css">
+<script defer src="main.js"></script></head>
 <body>
-  <h1>任務清單</h1>
+  <header>Todo List</header>
+  <main>
+    <aside class="sidebar">
+      <div class="project-title">&gt; Inbox</div>
+      <button class="new-project-btn">New Project</button>
+    </aside>
+    <section class="content">
+      <button class="new-task-btn">New Task</button>
+    </section>
+  </main>
 
-  <form id="task-form">
-    <input type="text" id="task-title" placeholder="輸入任務" required />
-    <input type="text" id="task-priority" placeholder="分類/優先級" required />
-    <button type="submit">新增任務</button>
-  </form>
+  <!-- 任務新增 Dialog -->
+  <dialog id="task-dialog">
+    <form id="task-form" method="dialog">
+      <h3>新增任務</h3>
 
-  <ul id="task-list"></ul>
+      <label>
+        標題：
+        <input type="text" id="task-title" required />
+      </label>
+
+      <label>
+        說明：
+        <input type="text" id="task-desc" />
+      </label>
+
+      <label>
+        到期日：
+        <input type="date" id="task-date" required />
+      </label>
+
+      <label>
+        優先級：
+        <select id="task-priority">
+          <option value="1">1（最高）</option>
+          <option value="2">2</option>
+          <option value="3" selected>3</option>
+          <option value="4">4</option>
+          <option value="5">5（最低）</option>
+        </select>
+      </label>
+
+      <div style="margin-top: 1rem;">
+        <button type="submit">確定新增</button>
+        <button type="button" id="cancel-dialog">取消</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="main.js"></script>
 </body>
 </html>
