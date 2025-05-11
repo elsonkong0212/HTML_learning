@@ -1,0 +1,17 @@
+.container {
+  max-width: 500px;
+  margin: auto;
+  padding: 1rem;
+  font-family: sans-serif;
+}
+
+input {
+  width: 70%;
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+button {
+  margin-right: 0.5rem;
+  padding: 0.5rem;
+}
